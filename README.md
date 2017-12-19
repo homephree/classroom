@@ -35,3 +35,33 @@ in beanstalk.
 
 `pip3 install awsebcli
 
+
+## see also python install
+
+sudo yum install git
+
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+
+vim .bash_profile
+
+add following lines to .bash_profile:
+
+export PATH="/home/ec2-user/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+sudo yum install gcc
+
+sudo yum install openssl-devel
+
+sudo yum install bzip2-devel
+
+sudo yum install sqlite-devel
+
+sudo yum install readline-devel
+
+sudo yum install patch
+
+pyenv install 3.5.2
+
+Install lxml lib
+sudo yum install libxml2-dev libxslt-dev python34-dev
