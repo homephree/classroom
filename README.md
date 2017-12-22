@@ -64,4 +64,22 @@ sudo yum install patch
 pyenv install 3.5.2
 
 Install lxml lib
-sudo yum install libxml2-dev libxslt-dev python34-dev
+sudo yum install libxml2-dev libxslt-dev python34-dev python35-dev
+
+
+add user
+
+sudo vi /etc/ssh/sshd_config
+:
+PasswordAuthentication yes
+
+sudo adduser <user>
+sudo passwd <user>
+
+add npm
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install 6.11.5
+node -e "console.log('Running Node.js ' + process.version)"
+
